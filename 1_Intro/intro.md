@@ -20,4 +20,19 @@
 * 배열 기반 컨테이너
 * 노드 기반 컨테이너
 
-<script src="https://gist.github.com/faithdy/eb6f6e6ff4fd781ebd7039f115a40a50.js"></script>
+<script src="https://gist.github.com/faithdy/eb6f6e6ff4fd781ebd7039f115a40a50.js">
+</script>
+
+# 반복자
+반복자의 역할은 알고리즘과 컨테이너의 통신소 역할.  
+for문의 제어변수랑 비슷한역할  
+컨테이너 내의 원소인 순차열을 탐색.  
+순차열 : [begin, end)
+
+반복자는 다음 다섯가지 범주로 나뉨
+* 입력 반복자 : ifstream
+* 출력 반복자 : ofstream
+* 순방향 반복자
+* 양방향 반복자 : list, set, multiset, map, multimap
+* 임의 접근 반복자 : vector, deque
+  
