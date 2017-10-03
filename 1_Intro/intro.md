@@ -35,4 +35,38 @@ for문의 제어변수랑 비슷한역할
 * 순방향 반복자
 * 양방향 반복자 : list, set, multiset, map, multimap
 * 임의 접근 반복자 : vector, deque
-  
+
+# 알고리즘
+순차열의 원소를 조사, 변경, 관리, 처리할 목적  
+대게 순방향 반복자를 요구함.
+
+STL 알고리즘은 다음 7가지의 범주로 분류
+* 원소를 수정하지 않는 알고리즘
+* 원소를 수정하는 알고리즘
+* 제거 알고리즘
+* 변경 알고리즘
+* 정렬 알고리즘
+* 정렬된 범위 알고리즘
+* 수치 알고리즘
+
+# 함수 객체
+함수 객체는 클라이언트가 정의한 동작을 다른 구성 요소에 반영하려 할 때 사용  
+DS2차 과제에서 정렬할때 곤정누나가 제공한 코드같은 것!
+```c++
+sort(v.begin(), v.end(), less<int>());
+sort(v.begin(), v.end(), greater<int>());
+```
+에서 less, grater 부분!
+
+# 어댑터
+어댑터는 구성 요소의 인터페이스를 변경
+
+* 컨테이너 어댑터 : stack, queue, priority_queue
+* 반복자 어댑터 : reverse_iterator, back_insert_iterator,  
+  front_insert_iterator, insert_iterator
+* 함수 어댑터 : binder, negator, 함수 포인터 어댑터
+
+# 할당기
+컨테이너의 메모리할당 정보와 정책을 캡슐화한 STL 구성 요소  
+사용자 정의 할당기는 사용자가 직접 메모리 할당 방식을 제어할 수 있음  
+->다중 스레드, 안전한 사용자 메모리 할당 모델등 특정 구현 환경에 최적화 됨.
