@@ -4,10 +4,15 @@
 - [x] vector v
 - [x] vector v(n)
 - [x] vector v(n,x)
-- [ ] vector v(v2)
-- [ ] vector v(b,e)
+- [x] vector v(v2)
+- [x] vector v(b,e)
 
 ## 멤버 함수
+- [x] v.push_back(x)
+- [x] v.pop_back()
+- [x] v.reserve(n)
+
+
 - [x] x = v.size()
 - [x] x = v.max_size()
 - [x] x = v.capacity()
@@ -33,22 +38,21 @@
 - [x] p = v.rend()
 
 
+- [x] q = v.erase(p)
+- [x] q = v.erase(b,e)
+- [x] q = v.insert(p,x)
+- [x] v.insert(p, n, x)
+- [x] v.insert(p, b, e)
+
+
 - [x] v.assign(n,x)
-- [ ] v.assign(b,e)
-- [ ] q = v.erase(p)
-- [ ] q = v.erase(b,e)
-- [ ] q = v.insert(p,x)
-- [ ] v.insert(p, n, x)
-- [ ] v.insert(p, b, e)
-- [ ] v.pop_back()
-- [x] v.push_back(x)
-- [ ] v.reserve(n)
+- [x] v.assign(b,e)
 
 ## 연산자
-- [ ] v1 == v2
-- [ ] v1 != v2
-- [ ] v1 < v2
-- [ ] v1 <= v2
-- [ ] v1 > v2
-- [ ] v1 >= v2
+- [x] v1 == v2
+- [x] v1 != v2
+- [x] v1 < v2
+- [x] v1 <= v2
+- [x] v1 > v2
+- [x] v1 >= v2
 - [x] v[i]
