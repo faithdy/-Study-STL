@@ -51,12 +51,50 @@ string 컨테이너는 vector 컨테이너 기반
 - [x] s.data()
 
 
+>### compare version :
+>compare()
+>* string
+>* offset, length, string
+>* offset, length, string, offset, length
+>* char*
+>* offset, length, char*
+>* offset, length, char*, length
+>* offset, length, char*, offset, length
+
+- [x] s.compare(s2)
+
+
+>### copy version :
+>copy()
+>* char*, length
+>* char*, length, offset
+>
+>NOTICE : copy() copies original string without '\0'
+
+
+- [x] s.copy(buf,n)
+
+>### find version :
+>find()
+>* single character
+>* single character, offset
+>* char*
+>* char*, offset
+>* char*, offset, length
+>* string
+>* string, offset
+
+>NOTICE : the parameter 'offset' of find() means caller's offset.  
+>find returns offset, size_type pos.  
+>if not found, it returns -1(=npos).
+
+
+- [x] s.find(c)
+
+
 - [ ] s.at(i)
-- [ ] s.compare(s2)
-- [ ] s.copy(buf,n)
 - [ ] q=s.erase(p)
 - [ ] q=s.erase(b,e)
-- [ ] s.find(c)
 - [ ] s.insert(n,sz)
 - [ ] s.replace(pos,n,sz)
 - [ ] s.reserve(n)
