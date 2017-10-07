@@ -25,6 +25,13 @@ string 컨테이너는 vector 컨테이너 기반
 - [x] s.empty()
 
 
+- [x] s.at(i)
+- [x] s.reserve(n)
+- [x] s.resize(n)
+- [x] s.resize(n,c)
+- [x] s.swap(s2)
+
+
 >### append & assign version :
 >method()  
 >* string  
@@ -90,32 +97,70 @@ string 컨테이너는 vector 컨테이너 기반
 
 
 - [x] s.find(c)
+- [x] s.rfind(c)
 
 
-- [ ] s.at(i)
-- [ ] q=s.erase(p)
-- [ ] q=s.erase(b,e)
-- [ ] s.insert(n,sz)
-- [ ] s.replace(pos,n,sz)
-- [ ] s.reserve(n)
-- [ ] s.rsize(n)
-- [ ] s.rsize(n,c)
-- [ ] s.rfind(c)
-- [ ] s2=s.substr(pos)
-- [ ] s.swap(s2)
+>### insert version :
+>insert()
+>* offset, char*
+>* offset, char*, length
+>* offset, string
+>* offset, string, string.offset, length
+>* offset, length, single character
+>* iterator
+>* iteartor, single character
+>* iteartor, length, single character
+>* iterator, [iter1, iter2)
+
+>NOTICE : the parameter 'offset' of find() means caller's offset.  
+
+
+- [x] s.insert(n,sz)
+- [x] q=s.erase(p)
+- [x] q=s.erase(b,e)
+
+
+>### replace version :
+>replace()
+>* offset, length, char*
+>* offset, length, string
+>* offset, length, char*, length2
+>* offset, length, string, offset2, length2
+>* offset, length, character.length, single character
+>* [iterB, iterE), sz
+>* [iterB, iterE), s
+>* [iterB, iterE), sz, length
+>* [iterB, iterE), character.length, single character
+>* [iterB, iterE), [iter2B, iter2E)
+
+
+- [x] s.replace(pos,n,sz)
+
+
+>### substr version :
+>substr()
+>* offset
+>* offset, string::npos
+>* offset, length
+
+>NOTICE : the type string::npos seems like string.end()
+
+
+- [x] s2=s.substr(pos)
 
 
 ## 연산자
-- [ ] s[i]
+- [x] s[i]
 - [x] s+=s2
 - [x] s+s2
 - [x] s=s2
-- [ ] out<<s
-- [ ] in>>s
-- [ ] getilne(in,s)
-- [ ] s==s2
-- [ ] s!=s2
-- [ ] s<s2
-- [ ] s>s2
-- [ ] s<=s2
-- [ ] s>=s2
+
+- [x] out<<s
+- [x] in>>s
+- [x] getilne(in,s)
+- [x] s==s2
+- [x] s!=s2
+- [x] s<s2
+- [x] s>s2
+- [x] s<=s2
+- [x] s>=s2
