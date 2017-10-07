@@ -3,11 +3,11 @@ set 컨테이너와 거의 동일하나 중복 원소를 가질 수 있다는 �
 
 
 ## 생성자
-- [x] set s
-- [ ] set s(pred)
-- [x] set s(s2)
-- [x] set s(b,e)
-- [ ] set s(b,e,pred)
+- [x] multiset s
+- [ ] multiset s(pred)
+- [x] multiset s(s2)
+- [x] multiset s(b,e)
+- [ ] multiset s(b,e,pred)
 
 
 ## 멤버 함수
